@@ -1,0 +1,94 @@
+.team-section {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: #f8f9fa;
+}
+
+
+
+.team-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+}
+
+.team-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  text-align: center;
+  padding: 20px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.team-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.team-name {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.team-title {
+  font-size: 25px;
+  color: black;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+
+.team-description {
+  font-size: 0.9rem;
+  color: #555;
+}
+.homepage {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  background: url('D:\MERN\Notary\client\src\NoteryImg.jpg') no-repeat center center/cover;
+  min-height: 100vh;
+}
+
+
+.content {
+  color: white;
+  max-width: 50%;
+  margin-left: 2rem;
+}
+
+.content h1 {
+  
+  display: block;
+  font-size: 2em;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+  unicode-bidi: isolate;
+  margin-top: 0;
+    
+    margin-bottom: 0.5rem;
+    
+    line-height: 1.2;
+    font-weight: 300;
+    
+    font-family: 'Playfair Display';
+    color: #fff !important;
+    
+    font-size: 50px;
+}
+
+.content p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.9);
+}

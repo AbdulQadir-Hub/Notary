@@ -1,0 +1,130 @@
+.footer {
+  position: relative;
+  background: url('D:\MERN\Notary\client\src\NoteryImg1.jpg') no-repeat center center; 
+  background-size: cover;
+  color: white;
+  padding: 80px 30px;
+  text-align: left;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Darker overlay with reduced brightness */
+.footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.9); /* Very dark overlay for low brightness */
+  z-index: -1;
+  filter: brightness(0.3); /* Further reduces the image brightness */
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px; /* Increased gap for a clean layout */
+}
+
+.about-section {
+  flex: 1;
+  min-width: 250px;
+  max-width: 350px;
+}
+
+.about-section h3 {
+  font-size: 28px;
+  color: #fff;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.about-section p {
+  font-size: 16px;
+  color: #dcdcdc;
+  line-height: 1.8;
+}
+
+.social-icons {
+  margin-top: 20px;
+}
+
+.social-icons a {
+  margin-right: 15px;
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #f4b400;
+}
+
+.footer-links {
+  flex: 3;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; /* Better alignment */
+}
+
+.footer-link-group {
+  margin-bottom: 30px;
+}
+
+.footer-link-group h4 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: #fff;
+  font-weight: 700;
+
+  padding-bottom: 5px;
+}
+
+.footer-link-group a {
+  display: block; /* Each link on a new line */
+  font-size: 15px;
+  color: #dcdcdc;
+  text-decoration: none;
+  margin-bottom: 10px;
+  transition: color 0.3s ease;
+}
+
+.footer-link-group a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 15px;
+}
+
+.footer-bottom p {
+  color: #dcdcdc;
+}
+
+.footer-bottom span {
+  color: #f4b400;
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-links {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .footer-link-group {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+}
